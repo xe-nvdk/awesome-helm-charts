@@ -16,8 +16,8 @@ This Helm Chart is based on the Oficial [Telegraf DaemonSet Helm Chart](https://
 ## QuickStart
 
 ```console
-helm repo add influxdata https://helm.influxdata.com/
-helm upgrade --install telegraf-ds influxdata/telegraf-ds
+$ helm repo add awesome-helm-charts https://xe-nvdk.github.io/awesome-helm-charts/
+$ helm install telegraf-ds-k3s awesome-helm-charts/telegraf-ds-k3s
 ```
 
 > **Tip**: `helm upgrade --install [RELEASE] [CHART] [FLAGS]` is idempotent and can be run multiple times. If chart hasn't been installed, Helm installs it. If chart is installed, Helm redeploys the same version or upgrades the chart if a new version is available.
@@ -27,7 +27,7 @@ helm upgrade --install telegraf-ds influxdata/telegraf-ds
 To install the chart with the release name `my-release`:
 
 ```console
-helm upgrade --install my-release influxdata/telegraf-ds
+helm upgrade --install my-release awesome-helm-charts/telegraf-ds-k3s
 ```
 
 The command deploys a Telegraf DaemonSet on the Kubernetes cluster in the default configuration. The [configuration](#configuration) section as well as the [values.yaml](/values.yaml) file lists the parameters that can be configured during installation.
@@ -59,7 +59,7 @@ This command lets the chart deploy by setting the InfluxDB URL for Telegraf to w
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart. For example,
 
 ```console
-helm upgrade --install my-release -f values.yaml influxdata/telegraf-ds
+helm upgrade --install my-release -f values.yaml awesome-helm-charts/telegraf-ds-k3s
 ```
 
 > **Tip**: `helm upgrade --install [RELEASE] [CHART] [FLAGS]` can be shortened : `helm upgrade -i [RELEASE] [CHART] [FLAGS]`
@@ -72,7 +72,6 @@ This chart deploys the following by default:
   * [`cpu`](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/cpu)
   * [`disk`](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/disk)
   * [`diskio`](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/diskio)
-  * [`docker`](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/docker)
   * [`kernel`](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/kernel)
   * [`kubernetes`](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/kubernetes)
   * [`mem`](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mem)
