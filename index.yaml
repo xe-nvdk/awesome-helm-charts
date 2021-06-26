@@ -3,7 +3,7 @@ entries:
   telegraf-ds-k3s:
   - apiVersion: v1
     appVersion: "1.19"
-    created: "2021-06-26T09:21:13.2051677-03:00"
+    created: "2021-06-26T09:21:13.2051677-03:30"
     description: Telegraf is an agent written in Go for collecting, processing, aggregating,
       and writing metrics.
     digest: 3b269f16d731a380b6265b84e3b8a91578239e3e929d7401e51ba1f495164a1f
