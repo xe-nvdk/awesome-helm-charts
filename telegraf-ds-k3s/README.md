@@ -6,6 +6,8 @@
 
 The Telegraf-DS Helm chart uses the [Helm](https://helm.sh) package manager to bootstrap a Telegraf-DS (DaemonSet) on a [Kubernetes](http://kubernetes.io) cluster. You cannot customize Telegraf inputs for this chart being the goal is to provide an opinionated configuration for monitoring Kubernetes nodes and global Kubernetes monitoring.
 
+This Helm Chart is based on the Oficial [Telegraf DaemonSet Helm Chart](https://github.com/influxdata/helm-charts). The main difference with the original Helm chart is the no support of docker-engine. This Helm Chart was personalized to run in K3s or other Kubernetes distros that don't use Docker as engine.
+
 ## Prerequisites
 
 - Helm v2 or later
