@@ -1,4 +1,6 @@
-# Telegraf-DS (DaemonSet) Helm chart. No support to Docker Engine.
+# Telegraf-DS (DaemonSet) Helm chart for K3s.
+
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/telegraf-ds-k3s)](https://artifacthub.io/packages/search?repo=telegraf-ds-k3s)
 
 [Telegraf](https://github.com/influxdata/telegraf) is a plugin-driven server agent used for collecting and reporting metrics. This chart runs a DaemonSet of Telegraf instances to collect host-level metrics for your cluster. To poll individual instances of infrastructure or APIs, use the [Telegraf chart](https://github.com/influxdata/helm-charts/tree/master/charts/telegraf).
 
