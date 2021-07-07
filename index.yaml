@@ -21,5 +21,5 @@ entries:
     - https://github.com/xe-nvdk/awesome-helm-charts/telegraf-ds-k3s
     urls:
     - https://xe-nvdk.github.io/awesome-helm-charts/telegraf-ds-k3s/telegraf-ds-k3s-1.0.0.tgz
-    version: 1.1.0
+    version: 1.0.0
 generated: "2021-06-26T09:21:13.1957432-03:00"
